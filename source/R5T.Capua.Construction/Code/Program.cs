@@ -8,33 +8,19 @@ using R5T.Liverpool;
 
 namespace R5T.Capua.Construction
 {
-    class Program : HostedServiceProgramBase // AsyncHostedServiceProgramBase
+    class Program : AsyncHostedServiceProgramBase
     {
         public Program(IApplicationLifetime applicationLifetime)
             : base(applicationLifetime)
         {
         }
 
-        //static async Task Main(string[] args)
-        //{
-        //    await HostedServiceProgram.RunAsync<Program>(args);
-        //}
-
-        //protected override Task SubMain()
-        //{
-        //    Console.WriteLine("Hello world!");
-
-        //    throw new NotImplementedException();
-
-        //    //return Task.CompletedTask;
-        //}
-
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            HostedServiceProgram.Run<Program>(args);
+            await HostedServiceProgram.RunAsync<Program, Startup>();
         }
 
-        protected override void SubMain()
+        protected override Task SubMainAsync()
         {
             Console.WriteLine("Hello world!");
 
