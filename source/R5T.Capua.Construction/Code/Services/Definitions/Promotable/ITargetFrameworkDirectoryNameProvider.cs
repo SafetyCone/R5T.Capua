@@ -3,7 +3,7 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    interface ITargetFrameworkDirectoryNameProvider
+    public interface ITargetFrameworkDirectoryNameProvider
     {
         string GetTargetFrameworkDirectoryName();
     }

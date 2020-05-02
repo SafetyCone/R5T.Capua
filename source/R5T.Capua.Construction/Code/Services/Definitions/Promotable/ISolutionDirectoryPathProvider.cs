@@ -3,7 +3,7 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    interface ISolutionDirectoryPathProvider
+    public interface ISolutionDirectoryPathProvider
     {
         string GetSolutionDirectoryPath();
     }

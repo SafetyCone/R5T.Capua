@@ -44,18 +44,18 @@ namespace R5T.Capua.Construction
                 ;
 
             services
-                .AddSingleton<IBinariesDestinationDirectoryName, BinariesDestinationDirectoryName>()
+                .AddSingleton<IBinariesDestinationDirectoryName, DefaultBinariesDestinationDirectoryName>()
                 .AddDefaultBuildOutputDirectoryNameProvider<IBuildOutputDirectoryNameProvider>()
                 .AddSingleton<IBuildConfigurationNameProvider, DebugBuildConfigurationNameProvider>()
                 .AddSingleton<IBuildConfigurationDirectoryNameProvider, DefaultBuildConfigurationDirectoryNameProvider>()
                 .AddSingleton<IDestinationFileSystemSiteProvider, DestinationFileSystemSiteProvider>()
                 .AddFileSystemCloningOperator<IFileSystemCloningOperator>()
                 .AddLocalFileSystemOperator<ILocalFileSystemOperator>(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
-                .AddSingleton<IProjectBinariesDestinationDirectoryNameProvider, ProjectBinariesDestinationDirectoryNameProvider>()
-                .AddSingleton<IProjectNameProvider, ProjectNameProvider>()
+                .AddSingleton<IProjectBinariesDestinationDirectoryNameProvider, DefaultProjectBinariesDestinationDirectoryNameProvider>()
+                .AddSingleton<IProjectNameProvider, ConfigurationBasedProjectNameProvider>()
                 .AddSingleton<IProjectDirectoryNameProvider, DefaultProjectDirectoryNameProvider>()
                 .AddRivetOrganizationDirectoryPathProvider<IRivetOrganizationDirectoryPathProvider>()
-                .AddSingleton<ISolutionDirectoryPathProvider, SolutionDirectoryPathProvider>()
+                .AddSingleton<ISolutionDirectoryPathProvider, ConfigurationBasedSolutionDirectoryPathProvider>()
                 .AddSingleton<ISourceFileSystemSiteProvider, SourceFileSystemSiteProvider>()
                 .AddDefaultStringlyTypedPathOperator<IStringlyTypedPathOperator>()
                 .AddSingleton<ITargetFrameworkDirectoryNameProvider, DefaultTargetFrameworkDirectoryNameProvider>()

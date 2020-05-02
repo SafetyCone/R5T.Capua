@@ -3,7 +3,7 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    interface IProjectDirectoryNameProvider
+    public interface IProjectDirectoryNameProvider
     {
         string GetProjectDirectoryName();
     }

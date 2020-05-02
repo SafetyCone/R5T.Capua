@@ -3,7 +3,10 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    class BinariesDestinationDirectoryName : IBinariesDestinationDirectoryName
+    /// <summary>
+    /// The default <see cref="IBinariesDestinationDirectoryName"/> implementation returns "Binaries".
+    /// </summary>
+    class DefaultBinariesDestinationDirectoryName : IBinariesDestinationDirectoryName
     {
         public string GetBinariesDestinationDirectoryName()
         {
