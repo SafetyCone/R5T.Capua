@@ -46,9 +46,9 @@ namespace R5T.Capua.Construction
             services
                 .AddSingleton<IBinariesDestinationDirectoryName, DefaultBinariesDestinationDirectoryName>()
                 .AddDefaultBuildOutputDirectoryNameProvider<IBuildOutputDirectoryNameProvider>()
-                .AddSingleton<IBuildConfigurationNameProvider, DebugBuildConfigurationNameProvider>()
+                .AddSingleton<IBuildConfigurationNameProvider, ConfigurationBasedBuildConfigurationNameProvider>()
                 .AddSingleton<IBuildConfigurationDirectoryNameProvider, DefaultBuildConfigurationDirectoryNameProvider>()
-                .AddSingleton<IDestinationFileSystemSiteProvider, DestinationFileSystemSiteProvider>()
+                .AddSingleton<IDestinationFileSystemSiteProvider, RivetOrganizationDirectoryDestinationFileSystemSiteProvider>()
                 .AddFileSystemCloningOperator<IFileSystemCloningOperator>()
                 .AddLocalFileSystemOperator<ILocalFileSystemOperator>(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
                 .AddSingleton<IProjectBinariesDestinationDirectoryNameProvider, DefaultProjectBinariesDestinationDirectoryNameProvider>()
@@ -59,7 +59,7 @@ namespace R5T.Capua.Construction
                 .AddSingleton<ISourceFileSystemSiteProvider, SourceFileSystemSiteProvider>()
                 .AddDefaultStringlyTypedPathOperator<IStringlyTypedPathOperator>()
                 .AddSingleton<ITargetFrameworkDirectoryNameProvider, DefaultTargetFrameworkDirectoryNameProvider>()
-                .AddSingleton<ITargetFrameworkNameProvider, NetStandard20TargetFrameworkNameProvider>()
+                .AddSingleton<ITargetFrameworkNameProvider, ConfigurationBasedTargetFrameworkNameProvider>()
                 ;
         }
     }

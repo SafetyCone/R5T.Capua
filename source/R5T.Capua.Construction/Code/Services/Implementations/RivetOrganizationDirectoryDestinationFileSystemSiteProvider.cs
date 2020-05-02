@@ -8,7 +8,7 @@ using R5T.Lombardy;
 
 namespace R5T.Capua.Construction.Services
 {
-    class DestinationFileSystemSiteProvider : IDestinationFileSystemSiteProvider
+    class RivetOrganizationDirectoryDestinationFileSystemSiteProvider : IDestinationFileSystemSiteProvider
     {
         private IBinariesDestinationDirectoryName BinariesDestinationDirectoryName { get; }
         private ILocalFileSystemOperator LocalFileSystemOperator { get; }
@@ -18,7 +18,7 @@ namespace R5T.Capua.Construction.Services
 
 
 
-        public DestinationFileSystemSiteProvider(
+        public RivetOrganizationDirectoryDestinationFileSystemSiteProvider(
             IBinariesDestinationDirectoryName binariesDestinationDirectoryName,
             ILocalFileSystemOperator localFileSystemOperator,
             IProjectBinariesDestinationDirectoryNameProvider projectBinariesDestinationDirectoryNameProvider,
