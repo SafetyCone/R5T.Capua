@@ -3,7 +3,7 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    interface ITargetFrameworkNameProvider
+    public interface ITargetFrameworkNameProvider
     {
         string GetTargetFrameworkName();
     }

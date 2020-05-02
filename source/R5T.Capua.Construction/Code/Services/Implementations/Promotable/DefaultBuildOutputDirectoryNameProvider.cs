@@ -3,7 +3,10 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    class BuildOutputDirectoryNameProvider : IBuildOutputDirectoryNameProvider
+    /// <summary>
+    /// The default "bin" build output directory name provider.
+    /// </summary>
+    public class DefaultBuildOutputDirectoryNameProvider : IBuildOutputDirectoryNameProvider
     {
         public string GetBuildOutputDirectoryName()
         {

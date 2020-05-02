@@ -3,7 +3,10 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    class BuildConfigurationNameProvider : IBuildConfigurationNameProvider
+    /// <summary>
+    /// The Debug build configuration name provider.
+    /// </summary>
+    public class DebugBuildConfigurationNameProvider : IBuildConfigurationNameProvider
     {
         public string GetBuildConfigurationName()
         {

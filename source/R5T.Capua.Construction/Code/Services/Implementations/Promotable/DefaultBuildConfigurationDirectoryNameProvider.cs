@@ -3,12 +3,15 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    class BuildConfigurationDirectoryNameProvider : IBuildConfigurationDirectoryNameProvider
+    /// <summary>
+    /// The default <see cref="IBuildConfigurationDirectoryNameProvider"/> implementation uses the <see cref="IBuildConfigurationNameProvider"/> service and presumes that the build configuration directory name is the same as the build configuration name.
+    /// </summary>
+    public class DefaultBuildConfigurationDirectoryNameProvider : IBuildConfigurationDirectoryNameProvider
     {
         private IBuildConfigurationNameProvider BuildConfigurationNameProvider { get; }
 
 
-        public BuildConfigurationDirectoryNameProvider(IBuildConfigurationNameProvider buildConfigurationNameProvider)
+        public DefaultBuildConfigurationDirectoryNameProvider(IBuildConfigurationNameProvider buildConfigurationNameProvider)
         {
             this.BuildConfigurationNameProvider = buildConfigurationNameProvider;
         }

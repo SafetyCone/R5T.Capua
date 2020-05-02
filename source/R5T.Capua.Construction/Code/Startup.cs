@@ -45,21 +45,21 @@ namespace R5T.Capua.Construction
 
             services
                 .AddSingleton<IBinariesDestinationDirectoryName, BinariesDestinationDirectoryName>()
-                .AddSingleton<IBuildOutputDirectoryNameProvider, BuildOutputDirectoryNameProvider>()
-                .AddSingleton<IBuildConfigurationNameProvider, BuildConfigurationNameProvider>()
-                .AddSingleton<IBuildConfigurationDirectoryNameProvider, BuildConfigurationDirectoryNameProvider>()
+                .AddDefaultBuildOutputDirectoryNameProvider<IBuildOutputDirectoryNameProvider>()
+                .AddSingleton<IBuildConfigurationNameProvider, DebugBuildConfigurationNameProvider>()
+                .AddSingleton<IBuildConfigurationDirectoryNameProvider, DefaultBuildConfigurationDirectoryNameProvider>()
                 .AddSingleton<IDestinationFileSystemSiteProvider, DestinationFileSystemSiteProvider>()
                 .AddFileSystemCloningOperator<IFileSystemCloningOperator>()
                 .AddLocalFileSystemOperator<ILocalFileSystemOperator>(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
                 .AddSingleton<IProjectBinariesDestinationDirectoryNameProvider, ProjectBinariesDestinationDirectoryNameProvider>()
                 .AddSingleton<IProjectNameProvider, ProjectNameProvider>()
-                .AddSingleton<IProjectDirectoryNameProvider, ProjectDirectoryNameProvider>()
+                .AddSingleton<IProjectDirectoryNameProvider, DefaultProjectDirectoryNameProvider>()
                 .AddRivetOrganizationDirectoryPathProvider<IRivetOrganizationDirectoryPathProvider>()
                 .AddSingleton<ISolutionDirectoryPathProvider, SolutionDirectoryPathProvider>()
                 .AddSingleton<ISourceFileSystemSiteProvider, SourceFileSystemSiteProvider>()
                 .AddDefaultStringlyTypedPathOperator<IStringlyTypedPathOperator>()
-                .AddSingleton<ITargetFrameworkDirectoryNameProvider, TargetFrameworkDirectoryNameProvider>()
-                .AddSingleton<ITargetFrameworkNameProvider, TargetFrameworkNameProvider>()
+                .AddSingleton<ITargetFrameworkDirectoryNameProvider, DefaultTargetFrameworkDirectoryNameProvider>()
+                .AddSingleton<ITargetFrameworkNameProvider, NetStandard20TargetFrameworkNameProvider>()
                 ;
         }
     }

@@ -19,7 +19,10 @@ namespace R5T.Capua.Construction.Configuration
         {
             var rawCapuaConfiguration = this.RawCapuaConfiguration.Value;
 
-            options.Value1 = rawCapuaConfiguration.Value1;
+            options.SolutionDirectoryPath = rawCapuaConfiguration.SolutionDirectoryPath;
+            options.ProjectName = rawCapuaConfiguration.ProjectName;
+            options.BuildConfigurationName = rawCapuaConfiguration.BuildConfigurationName;
+            options.TargetFrameworkName = rawCapuaConfiguration.TargetFrameworkName;
         }
     }
 }

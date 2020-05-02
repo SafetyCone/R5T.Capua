@@ -3,7 +3,7 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    interface IBuildOutputDirectoryNameProvider
+    public interface IBuildOutputDirectoryNameProvider
     {
         string GetBuildOutputDirectoryName();
     }

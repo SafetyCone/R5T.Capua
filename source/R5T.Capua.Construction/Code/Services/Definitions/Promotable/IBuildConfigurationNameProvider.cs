@@ -3,7 +3,7 @@
 
 namespace R5T.Capua.Construction.Services
 {
-    interface IBuildConfigurationNameProvider
+    public interface IBuildConfigurationNameProvider
     {
         string GetBuildConfigurationName();
     }
