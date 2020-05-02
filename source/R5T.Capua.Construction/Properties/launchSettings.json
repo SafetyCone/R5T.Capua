@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "R5T.Capua.Construction": {
+      "commandName": "Project",
+      "commandLineArgs": "yo hello here!"
+    }
+  }
+}
