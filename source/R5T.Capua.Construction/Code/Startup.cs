@@ -45,13 +45,21 @@ namespace R5T.Capua.Construction
 
             services
                 .AddSingleton<IBinariesDestinationDirectoryName, BinariesDestinationDirectoryName>()
+                .AddSingleton<IBuildOutputDirectoryNameProvider, BuildOutputDirectoryNameProvider>()
+                .AddSingleton<IBuildConfigurationNameProvider, BuildConfigurationNameProvider>()
+                .AddSingleton<IBuildConfigurationDirectoryNameProvider, BuildConfigurationDirectoryNameProvider>()
                 .AddSingleton<IDestinationFileSystemSiteProvider, DestinationFileSystemSiteProvider>()
                 .AddFileSystemCloningOperator<IFileSystemCloningOperator>()
                 .AddLocalFileSystemOperator<ILocalFileSystemOperator>(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
                 .AddSingleton<IProjectBinariesDestinationDirectoryNameProvider, ProjectBinariesDestinationDirectoryNameProvider>()
+                .AddSingleton<IProjectNameProvider, ProjectNameProvider>()
+                .AddSingleton<IProjectDirectoryNameProvider, ProjectDirectoryNameProvider>()
                 .AddRivetOrganizationDirectoryPathProvider<IRivetOrganizationDirectoryPathProvider>()
+                .AddSingleton<ISolutionDirectoryPathProvider, SolutionDirectoryPathProvider>()
                 .AddSingleton<ISourceFileSystemSiteProvider, SourceFileSystemSiteProvider>()
                 .AddDefaultStringlyTypedPathOperator<IStringlyTypedPathOperator>()
+                .AddSingleton<ITargetFrameworkDirectoryNameProvider, TargetFrameworkDirectoryNameProvider>()
+                .AddSingleton<ITargetFrameworkNameProvider, TargetFrameworkNameProvider>()
                 ;
         }
     }
