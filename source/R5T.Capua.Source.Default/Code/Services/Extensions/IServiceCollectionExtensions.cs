@@ -4,11 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 using R5T.Dacia;
 
-using R5T.Capua.Source;
-using R5T.Capua.Source.Default;
 
-
-namespace R5T.Capua.Construction.Services
+namespace R5T.Capua.Source.Default
 {
     public static class IServiceCollectionExtensions
     {
@@ -26,7 +23,7 @@ namespace R5T.Capua.Construction.Services
         /// Adds the <see cref="DefaultBuildOutputDirectoryNameProvider"/> implementation of <see cref="IBuildOutputDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceCollection AddDefaultBuildOutputDirectoryNameProvider<TBuildOutputDirectoryNameProvider>(this IServiceCollection services)
-            where TBuildOutputDirectoryNameProvider: IBuildOutputDirectoryNameProvider
+            where TBuildOutputDirectoryNameProvider : IBuildOutputDirectoryNameProvider
         {
             services.AddDefaultBuildOutputDirectoryNameProvider();
 

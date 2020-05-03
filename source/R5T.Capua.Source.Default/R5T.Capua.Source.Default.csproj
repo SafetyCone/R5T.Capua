@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.Dacia.Extensions\source\R5T.Dacia.Extensions\R5T.Dacia.Extensions.csproj" />
     <ProjectReference Include="..\R5T.Capua.Common.Base\R5T.Capua.Common.Base.csproj" />
     <ProjectReference Include="..\R5T.Capua.Source.Base\R5T.Capua.Source.Base.csproj" />
   </ItemGroup>
