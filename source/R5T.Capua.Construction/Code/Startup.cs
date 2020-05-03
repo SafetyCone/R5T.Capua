@@ -48,6 +48,7 @@ namespace R5T.Capua.Construction
                 .AddDefaultBuildOutputDirectoryNameProvider<IBuildOutputDirectoryNameProvider>()
                 .AddSingleton<IBuildConfigurationNameProvider, ConfigurationBasedBuildConfigurationNameProvider>()
                 .AddSingleton<IBuildConfigurationDirectoryNameProvider, DefaultBuildConfigurationDirectoryNameProvider>()
+                .AddSingleton<IDeployBuiltBinariesAction, DefaultDeployBuiltBinariesAction>()
                 .AddSingleton<IDestinationFileSystemSiteProvider, RivetOrganizationDirectoryDestinationFileSystemSiteProvider>()
                 .AddFileSystemCloningOperator<IFileSystemCloningOperator>()
                 .AddLocalFileSystemOperator<ILocalFileSystemOperator>(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
