@@ -8,7 +8,13 @@
     <ProjectReference Include="..\..\..\R5T.Sardinia\source\R5T.Sardinia\R5T.Sardinia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Shrewsbury.Extensions\source\R5T.Shrewsbury.Extensions\R5T.Shrewsbury.Extensions.csproj" />
     <ProjectReference Include="..\..\..\R5T.Teutonia.Standard\source\R5T.Teutonia.Standard\R5T.Teutonia.Standard.csproj" />
+    <ProjectReference Include="..\R5T.Capua.Base\R5T.Capua.Base.csproj" />
+    <ProjectReference Include="..\R5T.Capua.Destination.Default\R5T.Capua.Destination.Default.csproj" />
+    <ProjectReference Include="..\R5T.Capua.Source.Default\R5T.Capua.Source.Default.csproj" />
+    <ProjectReference Include="..\R5T.Capua.Teutonia\R5T.Capua.Teutonia.csproj" />
     <ProjectReference Include="..\R5T.Capua\R5T.Capua.csproj" />
+    <ProjectReference Include="..\R5T.Gepidia.Destination.Base\R5T.Gepidia.Destination.Base.csproj" />
+    <ProjectReference Include="..\R5T.Gepidia.Source.Base\R5T.Gepidia.Source.Base.csproj" />
   </ItemGroup>
 
   <ItemGroup>

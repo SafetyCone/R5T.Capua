@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\R5T.Capua.Common.Base\R5T.Capua.Common.Base.csproj" />
+    <ProjectReference Include="..\R5T.Capua.Destination.Base\R5T.Capua.Destination.Base.csproj" />
+  </ItemGroup>
+
+</Project>

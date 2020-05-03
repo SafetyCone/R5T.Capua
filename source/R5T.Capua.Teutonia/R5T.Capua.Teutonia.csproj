@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.Teutonia.Base\source\R5T.Teutonia.Base\R5T.Teutonia.Base.csproj" />
+    <ProjectReference Include="..\R5T.Capua.Base\R5T.Capua.Base.csproj" />
+    <ProjectReference Include="..\R5T.Gepidia.Destination.Base\R5T.Gepidia.Destination.Base.csproj" />
+    <ProjectReference Include="..\R5T.Gepidia.Source.Base\R5T.Gepidia.Source.Base.csproj" />
+  </ItemGroup>
+
+</Project>
