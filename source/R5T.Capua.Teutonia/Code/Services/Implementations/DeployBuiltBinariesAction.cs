@@ -15,6 +15,16 @@ namespace R5T.Capua.Teutonia
         private IDestinationFileSystemSiteProvider DestinationFileSystemSiteProvider { get; }
 
 
+        public DeployBuiltBinariesAction(
+            IFileSystemCloningOperator fileSystemCloningOperator,
+            ISourceFileSystemSiteProvider sourceFileSystemSiteProvider,
+            IDestinationFileSystemSiteProvider destinationFileSystemSiteProvider)
+        {
+            this.FileSystemCloningOperator = fileSystemCloningOperator;
+            this.SourceFileSystemSiteProvider = sourceFileSystemSiteProvider;
+            this.DestinationFileSystemSiteProvider = destinationFileSystemSiteProvider;
+        }
+
         public async Task RunAsync()
         {
             var gettingSourceFileSystemSite = this.SourceFileSystemSiteProvider.GetSourceFileSystemSiteAsync();
