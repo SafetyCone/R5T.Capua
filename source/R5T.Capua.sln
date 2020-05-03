@@ -121,25 +121,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Sardinia", "..\..\R5T.S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Opatia", "..\..\R5T.Opatia\source\R5T.Opatia\R5T.Opatia.csproj", "{1DCF2D3F-4321-45CC-AB5C-0CE1AEF75EC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Base", "R5T.Capua.Base\R5T.Capua.Base.csproj", "{50DA1BDB-6BFB-4995-84DA-0202B0BC9B98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Base", "R5T.Capua.Base\R5T.Capua.Base.csproj", "{50DA1BDB-6BFB-4995-84DA-0202B0BC9B98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Teutonia", "R5T.Capua.Teutonia\R5T.Capua.Teutonia.csproj", "{82102D92-68B2-48E4-A1F3-72BAE03E614F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Teutonia", "R5T.Capua.Teutonia\R5T.Capua.Teutonia.csproj", "{82102D92-68B2-48E4-A1F3-72BAE03E614F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Gepidia.Source.Base", "R5T.Gepidia.Source.Base\R5T.Gepidia.Source.Base.csproj", "{B5ECB826-1B42-4305-AF2F-446EAA196AC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Gepidia.Source.Base", "R5T.Gepidia.Source.Base\R5T.Gepidia.Source.Base.csproj", "{B5ECB826-1B42-4305-AF2F-446EAA196AC7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Gepidia.Types", "..\..\R5T.Gepidia.Types\source\R5T.Gepidia.Types\R5T.Gepidia.Types.csproj", "{63E0C910-37B1-4E11-A525-060AA9A2E6E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Gepidia.Destination.Base", "R5T.Gepidia.Destination.Base\R5T.Gepidia.Destination.Base.csproj", "{06F054EB-C0D5-4223-8427-4A8B274AB57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Gepidia.Destination.Base", "R5T.Gepidia.Destination.Base\R5T.Gepidia.Destination.Base.csproj", "{06F054EB-C0D5-4223-8427-4A8B274AB57A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Source.Base", "R5T.Capua.Source.Base\R5T.Capua.Source.Base.csproj", "{7A5F5F9C-F00A-431A-8F70-778E2BD5F292}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Source.Base", "R5T.Capua.Source.Base\R5T.Capua.Source.Base.csproj", "{7A5F5F9C-F00A-431A-8F70-778E2BD5F292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Destination.Base", "R5T.Capua.Destination.Base\R5T.Capua.Destination.Base.csproj", "{8C9EED18-BF4F-45D1-885E-E624C75EE267}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Destination.Base", "R5T.Capua.Destination.Base\R5T.Capua.Destination.Base.csproj", "{8C9EED18-BF4F-45D1-885E-E624C75EE267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Source.Default", "R5T.Capua.Source.Default\R5T.Capua.Source.Default.csproj", "{544641AD-09D9-4292-8B1F-B6E23773B0D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Source.Default", "R5T.Capua.Source.Default\R5T.Capua.Source.Default.csproj", "{544641AD-09D9-4292-8B1F-B6E23773B0D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Common.Base", "R5T.Capua.Common.Base\R5T.Capua.Common.Base.csproj", "{398C7C4D-E29B-40FA-B2CF-7181B4AA24A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Common.Base", "R5T.Capua.Common.Base\R5T.Capua.Common.Base.csproj", "{398C7C4D-E29B-40FA-B2CF-7181B4AA24A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Destination.Default", "R5T.Capua.Destination.Default\R5T.Capua.Destination.Default.csproj", "{F56E874E-F1C2-49B4-A6B1-AE7A2FA6086C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Capua.Destination.Default", "R5T.Capua.Destination.Default\R5T.Capua.Destination.Default.csproj", "{F56E874E-F1C2-49B4-A6B1-AE7A2FA6086C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Testing", "_Testing", "{5E961B02-5046-4F57-A52E-6A28C0DE54E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Capua.Default", "R5T.Capua.Default\R5T.Capua.Default.csproj", "{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -967,11 +971,24 @@ Global
 		{F56E874E-F1C2-49B4-A6B1-AE7A2FA6086C}.Release|x64.Build.0 = Release|Any CPU
 		{F56E874E-F1C2-49B4-A6B1-AE7A2FA6086C}.Release|x86.ActiveCfg = Release|Any CPU
 		{F56E874E-F1C2-49B4-A6B1-AE7A2FA6086C}.Release|x86.Build.0 = Release|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Debug|x64.Build.0 = Debug|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Debug|x86.Build.0 = Debug|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Release|x64.ActiveCfg = Release|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Release|x64.Build.0 = Release|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Release|x86.ActiveCfg = Release|Any CPU
+		{03AB2F8D-D5F6-4645-9B8F-DC0B30272B4F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{6F20BB50-5073-42C3-BC70-3559BFF40987} = {5E961B02-5046-4F57-A52E-6A28C0DE54E7}
 		{D32563E5-02B2-43FA-ADBE-D3CEA9C656FF} = {B587CCD7-BC41-41B9-AF4F-D1255BDF8F29}
 		{163C29A4-E164-40ED-B4FE-0A32A00EDB57} = {B587CCD7-BC41-41B9-AF4F-D1255BDF8F29}
 		{57EB4DDA-0444-482C-9339-B3F762FC56C2} = {B587CCD7-BC41-41B9-AF4F-D1255BDF8F29}

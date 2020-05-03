@@ -10,9 +10,9 @@ using R5T.Capua.Common;
 using R5T.Capua.Source;
 
 
-namespace R5T.Capua.Construction.Services
+namespace R5T.Capua.Default
 {
-    class BuiltBinariesSourceFileSystemSiteProvider : ISourceFileSystemSiteProvider
+    public class BuiltBinariesSourceFileSystemSiteProvider : ISourceFileSystemSiteProvider
     {
         private IBuildOutputDirectoryNameProvider BuildOutputDirectoryNameProvider { get; }
         private IBuildConfigurationDirectoryNameProvider BuildConfigurationDirectoryNameProvider { get; }

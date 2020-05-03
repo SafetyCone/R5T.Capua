@@ -10,9 +10,9 @@ using R5T.Lombardy;
 using R5T.Capua.Destination;
 
 
-namespace R5T.Capua.Construction.Services
+namespace R5T.Capua.Default
 {
-    class RivetOrganizationDirectoryDestinationFileSystemSiteProvider : IDestinationFileSystemSiteProvider
+    public class RivetOrganizationDirectoryDestinationFileSystemSiteProvider : IDestinationFileSystemSiteProvider
     {
         private IBinariesDestinationDirectoryName BinariesDestinationDirectoryName { get; }
         private ILocalFileSystemOperator LocalFileSystemOperator { get; }
