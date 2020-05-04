@@ -56,5 +56,22 @@ namespace R5T.Capua.Standard
 
             return services;
         }
+
+        public static IServiceCollection AddDeployBuiltBinariesAction<TDeployBuiltBinariesAction>(this IServiceCollection services,
+            ServiceAction<IBuildConfigurationNameProvider> addBuildConfigurationNameProvider,
+            ServiceAction<IProjectNameProvider> addProjectNameProviderAction,
+            ServiceAction<ISolutionDirectoryPathProvider> addSolutionDirectoryPathProviderAction,
+            ServiceAction<ITargetFrameworkNameProvider> addTargetFrameworkNameProviderAction)
+            where TDeployBuiltBinariesAction: IDeployBuiltBinariesAction
+        {
+            services.AddDeployBuiltBinariesAction(
+                addBuildConfigurationNameProvider,
+                addProjectNameProviderAction,
+                addSolutionDirectoryPathProviderAction,
+                addTargetFrameworkNameProviderAction
+                );
+
+            return services;
+        }
     }
 }
