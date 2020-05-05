@@ -21,7 +21,6 @@ namespace R5T.Capua.Default
         private IStringlyTypedPathOperator StringlyTypedPathOperator { get; }
 
 
-
         public RivetOrganizationDirectoryDestinationFileSystemSiteProvider(
             IBinariesDestinationDirectoryName binariesDestinationDirectoryName,
             ILocalFileSystemOperator localFileSystemOperator,
