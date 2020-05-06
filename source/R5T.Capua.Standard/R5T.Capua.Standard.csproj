@@ -8,9 +8,10 @@
     <ProjectReference Include="..\..\..\R5T.Alamania.Standard\source\R5T.Alamania.Standard\R5T.Alamania.Standard.csproj" />
     <ProjectReference Include="..\..\..\R5T.Gepidia.Local.Standard\source\R5T.Gepidia.Local.Standard\R5T.Gepidia.Local.Standard.csproj" />
     <ProjectReference Include="..\..\..\R5T.Teutonia.Standard\source\R5T.Teutonia.Standard\R5T.Teutonia.Standard.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Ujung.Default\source\R5T.Ujung.Default\R5T.Ujung.Default.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Ujung.Palembang\source\R5T.Ujung.Palembang\R5T.Ujung.Palembang.csproj" />
     <ProjectReference Include="..\R5T.Capua.Default\R5T.Capua.Default.csproj" />
     <ProjectReference Include="..\R5T.Capua.Destination.Default\R5T.Capua.Destination.Default.csproj" />
-    <ProjectReference Include="..\R5T.Capua.Source.Default\R5T.Capua.Source.Default.csproj" />
     <ProjectReference Include="..\R5T.Capua.Teutonia\R5T.Capua.Teutonia.csproj" />
   </ItemGroup>
 

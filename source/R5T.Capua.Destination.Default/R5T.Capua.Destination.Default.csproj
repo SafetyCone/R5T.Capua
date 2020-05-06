@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\R5T.Capua.Common.Base\R5T.Capua.Common.Base.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Ujung.Base\source\R5T.Ujung.Base\R5T.Ujung.Base.csproj" />
     <ProjectReference Include="..\R5T.Capua.Destination.Base\R5T.Capua.Destination.Base.csproj" />
   </ItemGroup>
 

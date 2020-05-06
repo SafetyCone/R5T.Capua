@@ -1,6 +1,6 @@
 ﻿using System;
 
-using R5T.Capua.Common;
+using R5T.Ujung;
 
 
 namespace R5T.Capua.Destination.Default

@@ -2,9 +2,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Liverpool\source\R5T.Liverpool.HostedServiceProgram\R5T.Liverpool.HostedServiceProgram.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Palembang.Base\source\R5T.Palembang.Base\R5T.Palembang.Base.csproj" />
     <ProjectReference Include="..\..\..\R5T.Richmond.Types\source\R5T.Richmond.Types\R5T.Richmond.Types.csproj" />
     <ProjectReference Include="..\..\..\R5T.Sardinia\source\R5T.Sardinia\R5T.Sardinia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Shrewsbury.Extensions\source\R5T.Shrewsbury.Extensions\R5T.Shrewsbury.Extensions.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Ujung.Base\source\R5T.Ujung.Base\R5T.Ujung.Base.csproj" />
     <ProjectReference Include="..\R5T.Capua.Standard\R5T.Capua.Standard.csproj" />
     <ProjectReference Include="..\R5T.Capua\R5T.Capua.csproj" />
   </ItemGroup>
