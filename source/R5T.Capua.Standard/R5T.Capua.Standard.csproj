@@ -15,4 +15,9 @@
     <ProjectReference Include="..\R5T.Capua.Teutonia\R5T.Capua.Teutonia.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Code\Services\Definitions\" />
+    <Folder Include="Code\Services\Implementations\" />
+  </ItemGroup>
+
 </Project>

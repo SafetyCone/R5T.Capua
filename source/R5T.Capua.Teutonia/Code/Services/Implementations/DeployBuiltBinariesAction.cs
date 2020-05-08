@@ -12,28 +12,31 @@ namespace R5T.Capua.Teutonia
     {
         private IFileSystemCloningOperator FileSystemCloningOperator { get; }
         private ISourceFileSystemSiteProvider SourceFileSystemSiteProvider { get; }
-        private IDestinationFileSystemSiteProvider DestinationFileSystemSiteProvider { get; }
+        private IDestinationFileSystemSitesProvider DestinationFileSystemSitesProvider { get; }
 
 
         public DeployBuiltBinariesAction(
             IFileSystemCloningOperator fileSystemCloningOperator,
             ISourceFileSystemSiteProvider sourceFileSystemSiteProvider,
-            IDestinationFileSystemSiteProvider destinationFileSystemSiteProvider)
+            IDestinationFileSystemSitesProvider destinationFileSystemSitesProvider)
         {
             this.FileSystemCloningOperator = fileSystemCloningOperator;
             this.SourceFileSystemSiteProvider = sourceFileSystemSiteProvider;
-            this.DestinationFileSystemSiteProvider = destinationFileSystemSiteProvider;
+            this.DestinationFileSystemSitesProvider = destinationFileSystemSitesProvider;
         }
 
         public async Task RunAsync()
         {
             var gettingSourceFileSystemSite = this.SourceFileSystemSiteProvider.GetSourceFileSystemSiteAsync();
-            var gettingDestinationFileSystemSite = this.DestinationFileSystemSiteProvider.GetDestinationFileSystemSiteAsync();
+            var gettingDestinationFileSystemSites = this.DestinationFileSystemSitesProvider.GetDestinationFileSystemSitesAsync();
 
             var sourceFileSystemSite = await gettingSourceFileSystemSite;
-            var destinationFileSystemSite = await gettingDestinationFileSystemSite;
+            var destinationFileSystemSites = await gettingDestinationFileSystemSites;
 
-            this.FileSystemCloningOperator.Clone(sourceFileSystemSite, destinationFileSystemSite);
+            foreach (var destinationFileSystemSite in destinationFileSystemSites)
+            {
+                this.FileSystemCloningOperator.Clone(sourceFileSystemSite, destinationFileSystemSite);
+            }
         }
     }
 }
