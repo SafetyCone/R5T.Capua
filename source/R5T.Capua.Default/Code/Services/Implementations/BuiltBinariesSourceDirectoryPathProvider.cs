@@ -4,10 +4,13 @@ using System.Threading.Tasks;
 using R5T.Lombardy;
 using R5T.Ujung;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public class BuiltBinariesSourceDirectoryPathProvider : IBuiltBinariesSourceDirectoryPathProvider
+    [ServiceImplementationMarker]
+    public class BuiltBinariesSourceDirectoryPathProvider : IBuiltBinariesSourceDirectoryPathProvider, IServiceImplementation
     {
         private IBuildOutputDirectoryNameProvider BuildOutputDirectoryNameProvider { get; }
         private IBuildConfigurationDirectoryNameProvider BuildConfigurationDirectoryNameProvider { get; }

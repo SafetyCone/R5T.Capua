@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Threading.Tasks;using R5T.T0064;
 
 
 namespace R5T.Gepidia.Destination
-{
-    public interface IDestinationFileSystemSitesProvider
+{[ServiceDefinitionMarker]
+    public interface IDestinationFileSystemSitesProvider:IServiceDefinition
     {
         Task<IEnumerable<FileSystemSite>> GetDestinationFileSystemSitesAsync();
     }

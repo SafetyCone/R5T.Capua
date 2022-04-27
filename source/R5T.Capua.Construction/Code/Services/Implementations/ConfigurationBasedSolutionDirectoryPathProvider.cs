@@ -1,18 +1,22 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Options;
 
 using R5T.Ujung;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Construction.Services
 {
-    class ConfigurationBasedSolutionDirectoryPathProvider : ISolutionDirectoryPathProvider
+    [ServiceImplementationMarker]
+    class ConfigurationBasedSolutionDirectoryPathProvider : ISolutionDirectoryPathProvider, IServiceImplementation
     {
         private IOptions<Configuration.CapuaConfiguration> Configuration { get; }
 
 
-        public ConfigurationBasedSolutionDirectoryPathProvider(IOptions<Configuration.CapuaConfiguration> configuration)
+        public ConfigurationBasedSolutionDirectoryPathProvider(
+            IOptions<Configuration.CapuaConfiguration> configuration)
         {
             this.Configuration = configuration;
         }

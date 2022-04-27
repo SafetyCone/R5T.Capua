@@ -52,7 +52,7 @@ namespace R5T.Capua.Standard
                 .AddSingleton<IDirectoryLastModifiedProvider, DirectoryLastModifiedProvider>()
                 .AddFileSystemCloningOperator<IFileSystemCloningOperator>()
                 .AddSingleton<ILatestDirectoryPathProvider, LatestDirectoryPathProvider>()
-                .AddLocalFileSystemOperator<ILocalFileSystemOperator>(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
+                .AddLocalFileSystemOperatorOnly_Old(ServiceAction<IStringlyTypedPathOperator>.AddedElsewhere)
                 .AddSingleton<IProjectBinariesDestinationDirectoryNameProvider, ProjectBinariesDestinationDirectoryNameProvider>()
                 .AddSingleton<IProjectDirectoryNameProvider, ProjectDirectoryNameProvider>()
                 .AddRivetOrganizationDirectoryPathProvider<IRivetOrganizationDirectoryPathProvider>()

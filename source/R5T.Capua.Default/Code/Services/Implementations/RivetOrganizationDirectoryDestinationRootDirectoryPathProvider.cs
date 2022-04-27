@@ -4,12 +4,15 @@ using System.Threading.Tasks;
 using R5T.Alamania;
 using R5T.Lombardy;
 
+using R5T.T0064;
+
 using R5T.Capua.Destination;
 
 
 namespace R5T.Capua.Default
 {
-    public class RivetOrganizationDirectoryDestinationRootDirectoryPathProvider : IDestinationRootDirectoryPathProvider
+    [ServiceImplementationMarker]
+    public class RivetOrganizationDirectoryDestinationRootDirectoryPathProvider : IDestinationRootDirectoryPathProvider, IServiceImplementation
     {
         private IBinariesDestinationDirectoryName BinariesDestinationDirectoryName { get; }
         private IProjectBinariesDestinationDirectoryNameProvider ProjectBinariesDestinationDirectoryNameProvider { get; }

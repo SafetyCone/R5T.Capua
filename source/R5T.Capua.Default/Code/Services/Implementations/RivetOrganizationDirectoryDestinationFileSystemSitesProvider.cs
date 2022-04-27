@@ -6,10 +6,13 @@ using R5T.Gepidia;
 using R5T.Gepidia.Destination;
 using R5T.Gepidia.Local;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public class RivetOrganizationDirectoryDestinationFileSystemSitesProvider : IDestinationFileSystemSitesProvider
+    [ServiceImplementationMarker]
+    public class RivetOrganizationDirectoryDestinationFileSystemSitesProvider : IDestinationFileSystemSitesProvider, IServiceImplementation
     {
         private IDateTimedDirectoryPathProvider DateTimedDirectoryPathProvider { get; }
         private ILatestDirectoryPathProvider LatestDirectoryPathProvider { get; }

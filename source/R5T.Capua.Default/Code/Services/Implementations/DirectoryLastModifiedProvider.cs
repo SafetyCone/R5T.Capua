@@ -1,10 +1,13 @@
 ﻿using System;
 using System.IO;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public class DirectoryLastModifiedProvider : IDirectoryLastModifiedProvider
+    [ServiceImplementationMarker]
+    public class DirectoryLastModifiedProvider : IDirectoryLastModifiedProvider, IServiceImplementation
     {
         public DateTime GetDirectoryLastModifiedDateTime(string directoryPath)
         {

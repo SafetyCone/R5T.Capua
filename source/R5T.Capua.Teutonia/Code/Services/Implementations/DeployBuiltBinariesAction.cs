@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 
 using R5T.Gepidia.Destination;
 using R5T.Gepidia.Source;
-using R5T.Teutonia;
+using R5T.Teutonia;using R5T.T0064;
 
 
 namespace R5T.Capua.Teutonia
-{
-    public class DeployBuiltBinariesAction : IDeployBuiltBinariesAction
+{[ServiceImplementationMarker]
+    public class DeployBuiltBinariesAction : IDeployBuiltBinariesAction,IServiceImplementation
     {
         private IFileSystemCloningOperator FileSystemCloningOperator { get; }
         private ISourceFileSystemSiteProvider SourceFileSystemSiteProvider { get; }

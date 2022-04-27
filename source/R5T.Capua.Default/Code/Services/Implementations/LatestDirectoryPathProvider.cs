@@ -3,10 +3,13 @@ using System.Threading.Tasks;
 
 using R5T.Lombardy;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public class LatestDirectoryPathProvider : ILatestDirectoryPathProvider
+    [ServiceImplementationMarker]
+    public class LatestDirectoryPathProvider : ILatestDirectoryPathProvider, IServiceImplementation
     {
         public const string LatestDirectoryName = "Latest";
 

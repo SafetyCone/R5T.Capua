@@ -3,10 +3,13 @@ using System.Threading.Tasks;
 
 using R5T.Magyar.Extensions;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public class DateTimedDirectoryNameProvider : IDateTimedDirectoryNameProvider
+    [ServiceImplementationMarker]
+    public class DateTimedDirectoryNameProvider : IDateTimedDirectoryNameProvider, IServiceImplementation
     {
         private IBuiltBinariesSourceDirectoryPathProvider BuiltBinariesSourceDirectoryPathProvider { get; }
         private IDirectoryLastModifiedProvider DirectoryLastModifiedProvider { get; }

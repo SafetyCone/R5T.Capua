@@ -1,18 +1,22 @@
-﻿using System;
+using System;
 
 using Microsoft.Extensions.Options;
 
 using R5T.Palembang;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Construction.Services
 {
-    class ConfigurationBasedProjectNameProvider : IProjectNameProvider
+    [ServiceImplementationMarker]
+    class ConfigurationBasedProjectNameProvider : IProjectNameProvider, IServiceImplementation
     {
         private IOptions<Configuration.CapuaConfiguration> Configuration { get; }
 
 
-        public ConfigurationBasedProjectNameProvider(IOptions<Configuration.CapuaConfiguration> configuration)
+        public ConfigurationBasedProjectNameProvider(
+            IOptions<Configuration.CapuaConfiguration> configuration)
         {
             this.Configuration = configuration;
         }

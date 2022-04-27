@@ -1,10 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
+using System;
+using System.Threading.Tasks;using R5T.T0064;
 
 
 namespace R5T.Gepidia.Source
-{
-    public interface ISourceFileSystemSiteProvider
+{[ServiceDefinitionMarker]
+    public interface ISourceFileSystemSiteProvider:IServiceDefinition
     {
         Task<FileSystemSite> GetSourceFileSystemSiteAsync();
     }

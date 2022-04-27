@@ -5,10 +5,13 @@ using R5T.Gepidia;
 using R5T.Gepidia.Local;
 using R5T.Gepidia.Source;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public class BuiltBinariesSourceFileSystemSiteProvider : ISourceFileSystemSiteProvider
+    [ServiceImplementationMarker]
+    public class BuiltBinariesSourceFileSystemSiteProvider : ISourceFileSystemSiteProvider, IServiceImplementation
     {
         private IBuiltBinariesSourceDirectoryPathProvider BuiltBinariesSourceDirectoryPathProvider { get; }
         private ILocalFileSystemOperator LocalFileSystemOperator { get; }

@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
 
+using R5T.T0064;
+
 
 namespace R5T.Capua.Default
 {
-    public interface IDateTimedDirectoryNameProvider
+    [ServiceDefinitionMarker]
+    public interface IDateTimedDirectoryNameProvider : IServiceDefinition
     {
         Task<string> GetDateTimedDirectoryNameAsync();
     }
