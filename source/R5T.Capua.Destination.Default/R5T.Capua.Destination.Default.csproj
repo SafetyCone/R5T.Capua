@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591;1573</NoWarn>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Ujung.Base\source\R5T.Ujung.Base\R5T.Ujung.Base.csproj" />
     <ProjectReference Include="..\R5T.Capua.Destination.Base\R5T.Capua.Destination.Base.csproj" />
   </ItemGroup>
-
 </Project>
